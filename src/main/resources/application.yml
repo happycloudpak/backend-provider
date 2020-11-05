@@ -1,0 +1,12 @@
+spring: 
+  application: 
+    name: backend-provider
+server: 
+  port: ${SERVER_PORT:18001}
+  
+eureka:
+  client: 
+    register-with-eureka: true 
+    fetch-registry: true 
+    service-url:
+      defaultZone: ${EUREKA_SERVERS:http://localhost:18761, http://localhost:18762, http://localhost:18763}
