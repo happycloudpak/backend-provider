@@ -2,8 +2,7 @@ spring:
   application: 
     name: backend-provider
 server: 
-  port: ${SERVER_PORT:18001}
-  
+  port: ${SERVER_PORT:18001}  
 eureka:
   client: 
     register-with-eureka: true 
