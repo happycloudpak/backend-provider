@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "************* DEPLOY service *****************"
+
 ######## functions ############
 RETURN=""
 function generate-cm() {
@@ -31,8 +33,6 @@ function generate-secret() {
 		fi
 	fi
 }
-
-echo "************* DEPLOY service *****************"
 
 # get parameters
 echo "STEP1: Get Parameters"
