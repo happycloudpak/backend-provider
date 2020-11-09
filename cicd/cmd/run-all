@@ -37,8 +37,8 @@ fi
 
 # download other shells and templates
 ${cmdpath}/dn-utils cmd/build-image,cmd/clear-all,cmd/deploy,cmd/set-env ${cmdpath} 1
-${cmdpath}/dn-utils dockerfile/Dockerfile ${basepath}/cicd 0
-${cmdpath}/dn-utils deploy/deploy.yaml ${basepath}/cicd 0
+${cmdpath}/dn-utils dockerfile/Dockerfile ${basedir}/cicd 0
+${cmdpath}/dn-utils deploy/deploy.yaml ${basedir}/cicd 0
 
 # build artifactory
 ${basedir}/mvnw clean package
