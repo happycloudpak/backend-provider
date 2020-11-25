@@ -3,4 +3,4 @@ spring:
     name: backend-provider
   profiles:
     active: local
-    include: common,common-eureka
+    #include: common,common-eureka

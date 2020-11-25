@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class BackendProviderController {
   @GetMapping("/provider/{message}")
   public String echo(@PathVariable String message) {
+	  System.out.println("[backend-provider] Get provider message");
+	  System.out.println("[backend-provider] I will show the result");
 	  return "RESPONSE: " + message;
   }
   
