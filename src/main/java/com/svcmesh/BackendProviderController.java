@@ -10,7 +10,7 @@ public class BackendProviderController {
   public String echo(@PathVariable String message) {
 	  System.out.println("[backend-provider] Get provider message");
 	  System.out.println("[backend-provider] I will show the result");
-	  return "YOU Typed: " + message; 
+	  return "YOU Typed: " + message;
   }
   
   @GetMapping("/circuit/{status}")
