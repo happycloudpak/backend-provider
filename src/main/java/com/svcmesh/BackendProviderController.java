@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class BackendProviderController {
   @GetMapping("/provider/{message}")
   public String echo(@PathVariable String message) {
-	  System.out.println("[backend-provider] Get provider message");
-	  System.out.println("[backend-provider] I will show the result");
+
 	  if ( "error".equalsIgnoreCase(message)) {
 		  System.out.println("[backend-provider] (error) You typed wrong message!");
 		  return "YOU Typed: " + message; 
 	  } else {
+		  System.out.println("[backend-provider] Get provider message");
+		  System.out.println("[backend-provider] I will show the result");
 		  return "YOU Typed: " + message; 
 	  }
 	 
