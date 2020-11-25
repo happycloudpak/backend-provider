@@ -10,7 +10,13 @@ public class BackendProviderController {
   public String echo(@PathVariable String message) {
 	  System.out.println("[backend-provider] Get provider message");
 	  System.out.println("[backend-provider] I will show the result");
-	  return "YOU Typed: " + message; 
+	  if ( "error".equalsIgnoreCase(message)) {
+		  System.out.println("[backend-provider] (error) You typed wrong message!");
+		  return "YOU Typed: " + message; 
+	  } else {
+		  return "YOU Typed: " + message; 
+	  }
+	 
   }
   
   @GetMapping("/circuit/{status}")
